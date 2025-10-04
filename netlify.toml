@@ -1,6 +1,6 @@
 [build]
   functions = "functions"
-  command = "npm run build"  
+  command = "npm install"  
   publish = "public" # or your static folder
 
 [[redirects]]
