@@ -8,6 +8,7 @@
     <meta name="keywords" content="香港人大灣區生活, 地區比較, 往返香港, 退休創業, 買樓, 租樓, 居住證, 房產證, 上網VPN,香港電視盒子, WeChat支付, Alipay支付, 美團外賣, 餓了麼, 電子支付流程, 美容美甲, 按摩, 高鐵, 公交, 港珠澳大橋, 金巴, 高德地圖,百度地圖, 12306 app, 私家車香港牌, 中港牌, 港車北上, 法律, 醫院, 過關, 寵物過關, 醫療飲食, trip.com, 貝殼找房, 58同城">
     <meta name="author" content="appshophk.com">
     <meta name="robots" content="index, follow">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css" rel="stylesheet">
@@ -1108,9 +1109,7 @@
                 <section class="bg-blue-50 rounded-lg shadow-md p-6 mb-8">
                     <p class="mt-2 text-black-300 text-center">
                         版權所有 &copy; <?php echo date("Y");?> 香港人大灣區生活指南
-                        <span class="ml-5 fs-3" id="visitCount">
-                            [<?php echo getVisitorCount(); ?>]
-                        </span>
+                        <span class="ml-5 fs-3" id="visitCount"></span>
                     </p>                    
                 </section>
 
@@ -1118,83 +1117,11 @@
         </div>
     </main>
 
-    <?php
-    function getVisitorCount() {
-        $counterFile = '/app/visitor_count.txt';
-        $visitorsFile = '/app/visitors.txt';
-
-        try {
-            // Get visitor's IP address
-            $visitorIp = $_SERVER['REMOTE_ADDR'];
-
-            // Initialize counter file if it doesn't exist
-            if (!file_exists($counterFile)) {
-                if (file_put_contents($counterFile, "0") === false) {
-                    throw new Exception("Failed to create counter file");
-                }
-            }
-
-            // Initialize visitors file if it doesn't exist
-            /*if (!file_exists($visitorsFile)) {
-                if (file_put_contents($visitorsFile, "") === false) {
-                    throw new Exception("Failed to create visitors file");
-                }
-            }*/
-
-            // Read current count with file locking
-            $totalVisitors = 0;
-            $fp = fopen($counterFile, 'r+');
-            if (flock($fp, LOCK_EX)) {
-                $countData = fread($fp, filesize($counterFile) ?: 1);
-                $totalVisitors = (int)$countData;
-
-                // Read visitors with file locking
-                $visitors = [];
-                $vfp = fopen($visitorsFile, 'r+');
-                if (flock($vfp, LOCK_EX)) {
-                    $visitors = file($visitorsFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-
-                    if ($visitors === false) {
-                        throw new Exception("Failed to read visitors file");
-                    }
-
-                    // Check if this is a new visitor
-                    //if (!in_array($visitorIp, $visitors)) {
-                        $totalVisitors++;
-
-                        // Update counter file
-                        ftruncate($fp, 0);
-                        rewind($fp);
-                        if (fwrite($fp, $totalVisitors) === false) {
-                            throw new Exception("Failed to write to counter file");
-                        }
-
-                        // Update visitors file
-                        /*if (file_put_contents($visitorsFile, $visitorIp . PHP_EOL, FILE_APPEND) === false) {
-                            throw new Exception("Failed to append to visitors file");
-                        }*/
-                    //}
-                    flock($vfp, LOCK_UN);
-                    fclose($vfp);
-                } else {
-                    throw new Exception("Failed to lock visitors file");
-                }
-
-                flock($fp, LOCK_UN);
-            } else {
-                throw new Exception("Failed to lock counter file");
-            }
-            fclose($fp);
-
-            return $totalVisitors;
-
-        } catch (Exception $e) {
-            error_log("Visitor counter error: " . $e->getMessage());
-            // Return last known count or 0 if file exists
-            return file_exists($counterFile) ? (int)file_get_contents($counterFile) : 0;
-        }
-    }
-    ?>
+  <script>    
+    $.get('/getVisitorCount', function(data) {
+        $('#visitorCount').text(data.totalVisitors);
+    });
+  </script>
 
 </body>
                              
