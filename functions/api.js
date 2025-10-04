@@ -5,6 +5,8 @@ const api = express();
 
 const router = Router();
 
+const fs = require('fs');
+const path = require('path');
 const counterFile = path.join(__dirname, 'visitor_count.txt');
 
 router.get("/hello", (req, res) => res.send("Hello World!"));
