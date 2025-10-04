@@ -1,9 +1,14 @@
 [build]
   functions = "functions"
+  command = "npm run build"  
   publish = "public" # or your static folder
 
 [[redirects]]
-  from = "/api/*"
+  from = "/*"
   to = "/.netlify/functions/server/:splat"
   status = 200
   force = true
+  
+[functions]
+node_bundler = "esbuild"
+external_node_modules = ["express"]
