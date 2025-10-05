@@ -1,7 +1,7 @@
 import { getStore } from "@netlify/blobs";
-import { Context } from "@netlify/functions";
+// import { Context } from "@netlify/functions";
 
-export default async (req: Request, context: Context) => {
+export default async (req, context) => {
   const store = getStore({ name: "visitor"});
 
   let count = 0;
