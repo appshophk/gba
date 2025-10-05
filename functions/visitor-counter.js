@@ -1,18 +1,19 @@
-export default async (req, context) => {
-  if (!context.blob) {
-    return new Response(JSON.stringify({
-      error: "Netlify Blob API is not available - make sure you're deploying to Netlify with the modern runtime."
-    }), { status: 500, headers: {"Content-Type":"application/json"} });
-  }
+import { getStore } from "@netlify/blobs";
+import type { Context } from "@netlify/functions">
 
-  const key = "visitor_count";
-  const store = "main";
+export default async (req: Request, context: Context) => {
+  const store = getStore({ name: "visitor", consistency: "strong" });
+
   let count = 0;
-  const result = await context.blob.get(key, { store });
+  const result = await store.get(key);
   count = result ? parseInt(result, 10) : 0;
   count++;
-  await context.blob.set(key, count.toString(), { store });
+
+  await store.set("visitor_count", count);
+
+//   return new Response(count);
   return new Response(JSON.stringify({ totalVisitors: count }), {
     headers: { "Content-Type": "application/json" }
   });
-}
+
+};
