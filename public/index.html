@@ -1117,10 +1117,12 @@
         </div>
     </main>
 
-  <script>    
-    $.get('/getVisitorCount', function(data) {
-        $('#visitorCount').text(data.totalVisitors);
-    });
+  <script>  
+    $(document).ready(function() {
+            $.get('/getVisitorCount', function(data) {
+                $('#visitorCount').text(data.totalVisitors);
+            });
+        });
   </script>
 
 </body>

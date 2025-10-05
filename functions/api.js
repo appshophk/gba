@@ -66,7 +66,7 @@ function getVisitorCount(req, res) {
     }
 }
 
-app.get('/getVisitorCount', getVisitorCount);
+router.get('/getVisitorCount', getVisitorCount);
 
 api.use("/api/", router);
 
