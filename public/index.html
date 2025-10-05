@@ -621,22 +621,22 @@
                         <h3 class="text-xl font-semibold mb-3 text-gray-800"><i class="fas fa-mobile-alt mr-2"></i>必備APP推薦</h3>
                         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                             <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
-                                <i class="fa fa-wechat" aria-hidden="true" alt="WeChat" class="w-12 h-12 mx-auto mb-2 rounded"></i>
+                                <i class="fab fa-weixin text-green-500" aria-hidden="true" alt="WeChat" class="w-12 h-12 mx-auto mb-2 rounded"></i>
                                 <h4 class="font-medium">微信</h4>
                                 <p class="text-xs text-gray-500">社交、支付、生活服務</p>
                             </div>
                             <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
-                                <i class="fa fa-alipay aria-hidden="true" class="w-12 h-12 mx-auto mb-2 rounded"></i>
+                                <i class="fab fa-alipay text-blue-500" aria-hidden="true" class="w-12 h-12 mx-auto mb-2 rounded"></i>
                                 <h4 class="font-medium">支付寶</h4>
                                 <p class="text-xs text-gray-500">電子支付、生活繳費</p>
                             </div>
                             <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
-                                <i class="fa fa-meituan" aria-hidden="true" class="w-12 h-12 mx-auto mb-2 rounded"></i>
+                                <i class="fab fa-meituan" aria-hidden="true" class="w-12 h-12 mx-auto mb-2 rounded"></i>
                                 <h4 class="font-medium">美團</h4>
                                 <p class="text-xs text-gray-500">外賣、團購、酒店預訂</p>
                             </div>
                             <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
-                                <i class="fa fa-dianping" aria-hidden="true" class="w-12 h-12 mx-auto mb-2 rounded"></i>
+                                <i class="fab fa-dianping" aria-hidden="true" class="w-12 h-12 mx-auto mb-2 rounded"></i>
                                 <h4 class="font-medium">大眾點評</h4>
                                 <p class="text-xs text-gray-500">餐廳評價、優惠券</p>
                             </div>
@@ -1120,9 +1120,9 @@
   <script>  
     $(document).ready(function() {
             $("#year").text(new Date().getFullYear());
-            $.get('/api/getVisitorCount', function(data) {
+            $.get('/.netlify/functions/visitor-counter', function(data) {
                 $('#visitorCount').text(data.totalVisitors);
-            });
+            });            
         });
   </script>
 
