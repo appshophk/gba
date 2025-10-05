@@ -1,5 +1,5 @@
 import { getStore } from "@netlify/blobs";
-import type { Context } from "@netlify/functions">
+import type { Context } from "@netlify/functions";
 
 export default async (req: Request, context: Context) => {
   const store = getStore({ name: "visitor", consistency: "strong" });
