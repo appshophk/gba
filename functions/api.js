@@ -58,11 +58,12 @@ function getVisitorCount(req, res) {
     } catch (err) {
         console.error('Visitor counter error:', err);
         // Return last known count or 0
-        let totalVisitors = 0;
+        // let totalVisitors = 0;
+        let totalVisitors = 1000;
         if (fs.existsSync(counterFile)) {
             totalVisitors = parseInt(fs.readFileSync(counterFile, 'utf-8'), 10) || 0;
         }
-        res.json({ totalVisitors });
+        res.json({ totalVisitors, err });
     }
 }
 
