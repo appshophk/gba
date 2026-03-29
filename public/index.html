@@ -103,95 +103,421 @@
                         <h2 class="text-2xl font-bold text-gray-800 ml-2">地區比較</h2>
                     </div>
 
-                    <div class="mb-4">
-                        <p class="text-lg font-semibold text-gray-700 mb-1">
-                            <i class="fas fa-scale-balanced mr-2 text-yellow-500"></i>
-                            東莞 vs 中山：
+                    <div class="mb-6">
+                        <p class="text-gray-700 mb-4">
+                            <i class="fas fa-info-circle text-blue-500 mr-2"></i>
+                            <strong>大灣區簡介：</strong>粵港澳大灣區涵蓋香港、澳門兩個特別行政區及廣東省9個城市（廣州、深圳、珠海、佛山、東莞、中山、江門、惠州、肇慶），總面積約5.6萬平方公里，總人口超過8,600萬，是中國開放程度最高、經濟活力最強的區域之一。
                         </p>
-                        香港人移居大灣區，選擇東莞或中山時，兩地各有特色，根據多方面因素，東莞似乎在交通、經濟規模和社群支持上對香港人更有優勢。
-                        香港人可能在財務、管理或專業服務方面有優勢，東莞因其規模和多元化，可能提供更多相關機會。中山雖然也有發展，但規模較小，服務業機會可能較有限。
-                        東莞生活成本相對低廉，適合家庭和個人。中山被評為國家環境保護示範城市，空氣質量較好，生活節奏較慢，可能更適合追求寧靜生活的香港人。
-                        東莞文化以粵語和客家話為主，但因經濟移民多，普通話使用更廣泛。東莞粵語與香港粵語相似，但有輕微口音，日常溝通無大問題。
-                        東莞因人口流動性高，可能普通話使用更普遍，中山則更保留地方特色。中山語言多樣，包括粵語、客家話和閩語，粵語是最常用語言，特別是石岐方言，與香港粵語相似。
-                        綜合來看，東莞在交通便利性（更短的旅行時間）、經濟規模（更多就業機會）和外籍社群支持上對香港人更有優勢，特別適合需要頻繁回港或尋求職業發展的香港人。
-                        中山則可能更適合追求寧靜生活和較低生活成本的香港人，但其交通和社群規模可能較為限制。
                     </div>
-                    
-                    <div class="mb-4">
-                        <p class="text-gray-700 mb-4">大灣區包含廣東省9個城市及港澳兩個特別行政區，以下是主要城市與香港的距離及交通時間比較：</p>
-                        
+
+                    <!-- 城市詳細比較 -->
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800"><i class="fas fa-city mr-2 text-purple-500"></i>九市詳細比較</h3>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                            <!-- 深圳 -->
+                            <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition">
+                                <div class="flex items-center mb-3">
+                                    <span class="w-10 h-10 bg-red-100 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-building text-red-500"></i>
+                                    </span>
+                                    <div>
+                                        <h4 class="font-bold text-lg">深圳</h4>
+                                        <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded">一線城市</span>
+                                    </div>
+                                </div>
+                                <div class="space-y-2 text-sm">
+                                    <p><i class="fas fa-subway text-blue-400 mr-2"></i><strong>交通：</strong>高鐵14分鐘直達西九龍</p>
+                                    <p><i class="fas fa-coins text-yellow-400 mr-2"></i><strong>平均月薪：</strong>¥12,000-¥20,000</p>
+                                    <p><i class="fas fa-home text-purple-400 mr-2"></i><strong>租金：</strong>¥5,000-¥18,000/月</p>
+                                    <p><i class="fas fa-utensils text-orange-400 mr-2"></i><strong>物價：</strong>較高，比香港低30%</p>
+                                </div>
+                                <div class="mt-3 pt-3 border-t">
+                                    <p class="text-xs text-gray-600"><i class="fas fa-check-circle text-green-500 mr-1"></i>科技產業發達、年輕人創業首選</p>
+                                    <p class="text-xs text-gray-600"><i class="fas fa-times-circle text-red-500 mr-1"></i>生活節奏快、競爭激烈</p>
+                                </div>
+                            </div>
+
+                            <!-- 廣州 -->
+                            <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition">
+                                <div class="flex items-center mb-3">
+                                    <span class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-landmark text-green-500"></i>
+                                    </span>
+                                    <div>
+                                        <h4 class="font-bold text-lg">廣州</h4>
+                                        <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">一線城市</span>
+                                    </div>
+                                </div>
+                                <div class="space-y-2 text-sm">
+                                    <p><i class="fas fa-subway text-blue-400 mr-2"></i><strong>交通：</strong>高鐵47分鐘直達西九龍</p>
+                                    <p><i class="fas fa-coins text-yellow-400 mr-2"></i><strong>平均月薪：</strong>¥8,000-¥15,000</p>
+                                    <p><i class="fas fa-home text-purple-400 mr-2"></i><strong>租金：</strong>¥3,000-¥12,000/月</p>
+                                    <p><i class="fas fa-utensils text-orange-400 mr-2"></i><strong>物價：</strong>適中，比香港低40%</p>
+                                </div>
+                                <div class="mt-3 pt-3 border-t">
+                                    <p class="text-xs text-gray-600"><i class="fas fa-check-circle text-green-500 mr-1"></i>文化底蘊深厚、美食之都</p>
+                                    <p class="text-xs text-gray-600"><i class="fas fa-times-circle text-red-500 mr-1"></i>傳統產業為主、創新氛圍較弱</p>
+                                </div>
+                            </div>
+
+                            <!-- 東莞 -->
+                            <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition">
+                                <div class="flex items-center mb-3">
+                                    <span class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-industry text-orange-500"></i>
+                                    </span>
+                                    <div>
+                                        <h4 class="font-bold text-lg">東莞</h4>
+                                        <span class="text-xs bg-orange-100 text-orange-600 px-2 py-1 rounded">新一線城市</span>
+                                    </div>
+                                </div>
+                                <div class="space-y-2 text-sm">
+                                    <p><i class="fas fa-subway text-blue-400 mr-2"></i><strong>交通：</strong>高鐵30分鐘到深圳北</p>
+                                    <p><i class="fas fa-coins text-yellow-400 mr-2"></i><strong>平均月薪：</strong>¥5,000-¥10,000</p>
+                                    <p><i class="fas fa-home text-purple-400 mr-2"></i><strong>租金：</strong>¥2,000-¥6,000/月</p>
+                                    <p><i class="fas fa-utensils text-orange-400 mr-2"></i><strong>物價：</strong>低，比香港低50%</p>
+                                </div>
+                                <div class="mt-3 pt-3 border-t">
+                                    <p class="text-xs text-gray-600"><i class="fas fa-check-circle text-green-500 mr-1"></i>製造業基地、港人眾多</p>
+                                    <p class="text-xs text-gray-600"><i class="fas fa-times-circle text-red-500 mr-1"></i>城市分散、需開車代步</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                            <!-- 珠海 -->
+                            <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition">
+                                <div class="flex items-center mb-3">
+                                    <span class="w-10 h-10 bg-cyan-100 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-water text-cyan-500"></i>
+                                    </span>
+                                    <div>
+                                        <h4 class="font-bold text-lg">珠海</h4>
+                                        <span class="text-xs bg-cyan-100 text-cyan-600 px-2 py-1 rounded">二線城市</span>
+                                    </div>
+                                </div>
+                                <div class="space-y-2 text-sm">
+                                    <p><i class="fas fa-subway text-blue-400 mr-2"></i><strong>交通：</strong>船程70分鐘到中環</p>
+                                    <p><i class="fas fa-coins text-yellow-400 mr-2"></i><strong>平均月薪：</strong>¥6,000-¥12,000</p>
+                                    <p><i class="fas fa-home text-purple-400 mr-2"></i><strong>租金：</strong>¥2,500-¥7,000/月</p>
+                                    <p><i class="fas fa-utensils text-orange-400 mr-2"></i><strong>物價：</strong>中等，比香港低45%</p>
+                                </div>
+                                <div class="mt-3 pt-3 border-t">
+                                    <p class="text-xs text-gray-600"><i class="fas fa-check-circle text-green-500 mr-1"></i>空氣品質佳、靠近澳門</p>
+                                    <p class="text-xs text-gray-600"><i class="fas fa-times-circle text-red-500 mr-1"></i>高薪職位較少</p>
+                                </div>
+                            </div>
+
+                            <!-- 中山 -->
+                            <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition">
+                                <div class="flex items-center mb-3">
+                                    <span class="w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-tree text-teal-500"></i>
+                                    </span>
+                                    <div>
+                                        <h4 class="font-bold text-lg">中山</h4>
+                                        <span class="text-xs bg-teal-100 text-teal-600 px-2 py-1 rounded">二線城市</span>
+                                    </div>
+                                </div>
+                                <div class="space-y-2 text-sm">
+                                    <p><i class="fas fa-subway text-blue-400 mr-2"></i><strong>交通：</strong>船程100分鐘到中環</p>
+                                    <p><i class="fas fa-coins text-yellow-400 mr-2"></i><strong>平均月薪：</strong>¥5,000-¥9,000</p>
+                                    <p><i class="fas fa-home text-purple-400 mr-2"></i><strong>租金：</strong>¥1,800-¥5,000/月</p>
+                                    <p><i class="fas fa-utensils text-orange-400 mr-2"></i><strong>物價：</strong>低，比香港低55%</p>
+                                </div>
+                                <div class="mt-3 pt-3 border-t">
+                                    <p class="text-xs text-gray-600"><i class="fas fa-check-circle text-green-500 mr-1"></i>生活悠閒、港人聚居</p>
+                                    <p class="text-xs text-gray-600"><i class="fas fa-times-circle text-red-500 mr-1"></i>公共交通不便</p>
+                                </div>
+                            </div>
+
+                            <!-- 佛山 -->
+                            <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition">
+                                <div class="flex items-center mb-3">
+                                    <span class="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-mosque text-yellow-500"></i>
+                                    </span>
+                                    <div>
+                                        <h4 class="font-bold text-lg">佛山</h4>
+                                        <span class="text-xs bg-yellow-100 text-yellow-600 px-2 py-1 rounded">新一線城市</span>
+                                    </div>
+                                </div>
+                                <div class="space-y-2 text-sm">
+                                    <p><i class="fas fa-subway text-blue-400 mr-2"></i><strong>交通：</strong>高鐵70分鐘到西九龍</p>
+                                    <p><i class="fas fa-coins text-yellow-400 mr-2"></i><strong>平均月薪：</strong>¥6,000-¥12,000</p>
+                                    <p><i class="fas fa-home text-purple-400 mr-2"></i><strong>租金：</strong>¥2,000-¥6,000/月</p>
+                                    <p><i class="fas fa-utensils text-orange-400 mr-2"></i><strong>物價：</strong>低，比香港低50%</p>
+                                </div>
+                                <div class="mt-3 pt-3 border-t">
+                                    <p class="text-xs text-gray-600"><i class="fas fa-check-circle text-green-500 mr-1"></i>嶺南文化、陶瓷武術</p>
+                                    <p class="text-xs text-gray-600"><i class="fas fa-times-circle text-red-500 mr-1"></i>方言強烈、溝通需適應</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <!-- 惠州 -->
+                            <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition">
+                                <div class="flex items-center mb-3">
+                                    <span class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-mountain text-blue-500"></i>
+                                    </span>
+                                    <div>
+                                        <h4 class="font-bold text-lg">惠州</h4>
+                                        <span class="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded">三線城市</span>
+                                    </div>
+                                </div>
+                                <div class="space-y-2 text-sm">
+                                    <p><i class="fas fa-subway text-blue-400 mr-2"></i><strong>交通：</strong>需轉乘，高鐵+大巴</p>
+                                    <p><i class="fas fa-coins text-yellow-400 mr-2"></i><strong>平均月薪：</strong>¥4,000-¥8,000</p>
+                                    <p><i class="fas fa-home text-purple-400 mr-2"></i><strong>租金：</strong>¥1,500-¥4,000/月</p>
+                                    <p><i class="fas fa-utensils text-orange-400 mr-2"></i><strong>物價：</strong>低，比香港低60%</p>
+                                </div>
+                                <div class="mt-3 pt-3 border-t">
+                                    <p class="text-xs text-gray-600"><i class="fas fa-check-circle text-green-500 mr-1"></i>海濱度假、樓價低</p>
+                                    <p class="text-xs text-gray-600"><i class="fas fa-times-circle text-red-500 mr-1"></i>偏遠、就業機會少</p>
+                                </div>
+                            </div>
+
+                            <!-- 江門 -->
+                            <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition">
+                                <div class="flex items-center mb-3">
+                                    <span class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-chess-rook text-indigo-500"></i>
+                                    </span>
+                                    <div>
+                                        <h4 class="font-bold text-lg">江門</h4>
+                                        <span class="text-xs bg-indigo-100 text-indigo-600 px-2 py-1 rounded">三線城市</span>
+                                    </div>
+                                </div>
+                                <div class="space-y-2 text-sm">
+                                    <p><i class="fas fa-subway text-blue-400 mr-2"></i><strong>交通：</strong>需轉乘，相對不便</p>
+                                    <p><i class="fas fa-coins text-yellow-400 mr-2"></i><strong>平均月薪：</strong>¥4,000-¥7,000</p>
+                                    <p><i class="fas fa-home text-purple-400 mr-2"></i><strong>租金：</strong>¥1,200-¥3,500/月</p>
+                                    <p><i class="fas fa-utensils text-orange-400 mr-2"></i><strong>物價：</strong>低，比香港低65%</p>
+                                </div>
+                                <div class="mt-3 pt-3 border-t">
+                                    <p class="text-xs text-gray-600"><i class="fas fa-check-circle text-green-500 mr-1"></i>華僑之鄉、美食豐富</p>
+                                    <p class="text-xs text-gray-600"><i class="fas fa-times-circle text-red-500 mr-1"></i>發展較慢、娛樂較少</p>
+                                </div>
+                            </div>
+
+                            <!-- 肇慶 -->
+                            <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition">
+                                <div class="flex items-center mb-3">
+                                    <span class="w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-hiking text-emerald-500"></i>
+                                    </span>
+                                    <div>
+                                        <h4 class="font-bold text-lg">肇慶</h4>
+                                        <span class="text-xs bg-emerald-100 text-emerald-600 px-2 py-1 rounded">四線城市</span>
+                                    </div>
+                                </div>
+                                <div class="space-y-2 text-sm">
+                                    <p><i class="fas fa-subway text-blue-400 mr-2"></i><strong>交通：</strong>需轉乘，偏遠</p>
+                                    <p><i class="fas fa-coins text-yellow-400 mr-2"></i><strong>平均月薪：</strong>¥3,500-¥6,000</p>
+                                    <p><i class="fas fa-home text-purple-400 mr-2"></i><strong>租金：</strong>¥1,000-¥3,000/月</p>
+                                    <p><i class="fas fa-utensils text-orange-400 mr-2"></i><strong>物價：</strong>最低，比香港低70%</p>
+                                </div>
+                                <div class="mt-3 pt-3 border-t">
+                                    <p class="text-xs text-gray-600"><i class="fas fa-check-circle text-green-500 mr-1"></i>自然環境好、養老勝地</p>
+                                    <p class="text-xs text-gray-600"><i class="fas fa-times-circle text-red-500 mr-1"></i>工作機會極少</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 交通時間對比表 -->
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800"><i class="fas fa-subway mr-2 text-blue-500"></i>往返香港交通時間</h3>
                         <div class="overflow-x-auto">
                             <table class="min-w-full bg-white rounded-lg overflow-hidden">
-                                <thead class="bg-gray-100">
+                                <thead class="bg-gradient-to-r from-blue-500 to-purple-500 text-white">
                                     <tr>
                                         <th class="py-3 px-4 text-left">城市</th>
-                                        <th class="py-3 px-4 text-left">距離香港</th>
-                                        <th class="py-3 px-4 text-left">高鐵時間</th>
-                                        <th class="py-3 px-4 text-left">船程</th>
-                                        <th class="py-3 px-4 text-left">適合人群</th>
+                                        <th class="py-3 px-4 text-left">高鐵/鐵路</th>
+                                        <th class="py-3 px-4 text-left">跨境巴士</th>
+                                        <th class="py-3 px-4 text-left">渡輪</th>
+                                        <th class="py-3 px-4 text-left">港珠澳大橋</th>
                                     </tr>
                                 </thead>
                                 <tbody class="divide-y divide-gray-200">
-                                    <tr class="hover:bg-gray-50">
+                                    <tr class="hover:bg-gray-50 bg-red-50">
                                         <td class="py-3 px-4 font-medium">深圳</td>
-                                        <td class="py-3 px-4">約30公里</td>
-                                        <td class="py-3 px-4">14分鐘(西九龍-福田)</td>
-                                        <td class="py-3 px-4">50分鐘(中環-蛇口)</td>
-                                        <td class="py-3 px-4">上班族、創業者</td>
+                                        <td class="py-3 px-4">14-30分鐘</td>
+                                        <td class="py-3 px-4">45-60分鐘</td>
+                                        <td class="py-3 px-4">50分鐘(蛇口)</td>
+                                        <td class="py-3 px-4">-</td>
                                     </tr>
                                     <tr class="hover:bg-gray-50">
                                         <td class="py-3 px-4 font-medium">廣州</td>
-                                        <td class="py-3 px-4">約140公里</td>
-                                        <td class="py-3 px-4">47分鐘(西九龍-廣州南)</td>
+                                        <td class="py-3 px-4">47-60分鐘</td>
+                                        <td class="py-3 px-4">2.5-3小時</td>
                                         <td class="py-3 px-4">-</td>
-                                        <td class="py-3 px-4">企業高管、退休人士</td>
+                                        <td class="py-3 px-4">-</td>
                                     </tr>
                                     <tr class="hover:bg-gray-50">
-                                        <td class="py-3 px-4 font-medium">珠海</td>
-                                        <td class="py-3 px-4">約60公里</td>
+                                        <td class="py-3 px-4 font-medium">東莞</td>
+                                        <td class="py-3 px-4">30-45分鐘</td>
+                                        <td class="py-3 px-4">1.5-2小時</td>
                                         <td class="py-3 px-4">-</td>
-                                        <td class="py-3 px-4">70分鐘(中環-九洲港)</td>
-                                        <td class="py-3 px-4">退休人士、度假人士</td>
+                                        <td class="py-3 px-4">-</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 bg-cyan-50">
+                                        <td class="py-3 px-4 font-medium">珠海</td>
+                                        <td class="py-3 px-4">70-90分鐘</td>
+                                        <td class="py-3 px-4">2-2.5小時</td>
+                                        <td class="py-3 px-4">70分鐘</td>
+                                        <td class="py-3 px-4">70分鐘(金巴)</td>
                                     </tr>
                                     <tr class="hover:bg-gray-50">
                                         <td class="py-3 px-4 font-medium">中山</td>
-                                        <td class="py-3 px-4">約90公里</td>
                                         <td class="py-3 px-4">-</td>
-                                        <td class="py-3 px-4">100分鐘(中環-中山港)</td>
-                                        <td class="py-3 px-4">創業者、家庭</td>
+                                        <td class="py-3 px-4">2-2.5小時</td>
+                                        <td class="py-3 px-4">100分鐘</td>
+                                        <td class="py-3 px-4">60分鐘</td>
                                     </tr>
                                     <tr class="hover:bg-gray-50">
                                         <td class="py-3 px-4 font-medium">佛山</td>
-                                        <td class="py-3 px-4">約180公里</td>
-                                        <td class="py-3 px-4">1小時10分鐘(西九龍-佛山西)</td>
+                                        <td class="py-3 px-4">70-90分鐘</td>
+                                        <td class="py-3 px-4">2.5-3小時</td>
                                         <td class="py-3 px-4">-</td>
-                                        <td class="py-3 px-4">退休人士、文化愛好者</td>
+                                        <td class="py-3 px-4">-</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4 font-medium">惠州</td>
+                                        <td class="py-3 px-4">70-90分鐘</td>
+                                        <td class="py-3 px-4">2.5-3小時</td>
+                                        <td class="py-3 px-4">-</td>
+                                        <td class="py-3 px-4">-</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4 font-medium">江門</td>
+                                        <td class="py-3 px-4">80-100分鐘</td>
+                                        <td class="py-3 px-4">2.5-3.5小時</td>
+                                        <td class="py-3 px-4">-</td>
+                                        <td class="py-3 px-4">90分鐘</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4 font-medium">肇慶</td>
+                                        <td class="py-3 px-4">100-120分鐘</td>
+                                        <td class="py-3 px-4">3.5-4小時</td>
+                                        <td class="py-3 px-4">-</td>
+                                        <td class="py-3 px-4">-</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                    
+
+                    <!-- 生活成本詳細比較 -->
                     <div class="mt-6">
-                        <h3 class="text-xl font-semibold mb-3 text-gray-800"><i class="fas fa-chart-line mr-2"></i>各城市生活成本比較</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                            <div class="bg-blue-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-blue-800 mb-2">深圳</h4>
-                                <p class="text-gray-700">租金: ¥5,000-¥15,000/月</p>
-                                <p class="text-gray-700">飲食: ¥2,000-¥4,000/月</p>
-                                <p class="text-gray-700">交通: ¥300-¥800/月</p>
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800"><i class="fas fa-chart-line mr-2"></i>生活成本詳細比較</h3>
+                        <div class="overflow-x-auto">
+                            <table class="min-w-full bg-white rounded-lg overflow-hidden mb-4">
+                                <thead class="bg-gradient-to-r from-green-400 to-blue-500 text-white">
+                                    <tr>
+                                        <th class="py-3 px-4 text-left">城市</th>
+                                        <th class="py-3 px-4 text-left">租金(兩房)</th>
+                                        <th class="py-3 px-4 text-left">飲食/月</th>
+                                        <th class="py-3 px-4 text-left">交通/月</th>
+                                        <th class="py-3 px-4 text-left">生活費合計</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-200">
+                                    <tr class="hover:bg-gray-50 bg-red-50">
+                                        <td class="py-3 px-4 font-medium">深圳</td>
+                                        <td class="py-3 px-4">¥8,000-¥18,000</td>
+                                        <td class="py-3 px-4">¥3,000-¥5,000</td>
+                                        <td class="py-3 px-4">¥400-¥800</td>
+                                        <td class="py-3 px-4 text-green-600 font-medium">¥12,000-¥25,000</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4 font-medium">廣州</td>
+                                        <td class="py-3 px-4">¥5,000-¥12,000</td>
+                                        <td class="py-3 px-4">¥2,500-¥4,000</td>
+                                        <td class="py-3 px-4">¥300-¥600</td>
+                                        <td class="py-3 px-4 text-green-600 font-medium">¥8,000-¥17,000</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4 font-medium">東莞</td>
+                                        <td class="py-3 px-4">¥2,500-¥6,000</td>
+                                        <td class="py-3 px-4">¥1,500-¥3,000</td>
+                                        <td class="py-3 px-4">¥200-¥400</td>
+                                        <td class="py-3 px-4 text-green-600 font-medium">¥5,000-¥10,000</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 bg-cyan-50">
+                                        <td class="py-3 px-4 font-medium">珠海</td>
+                                        <td class="py-3 px-4">¥3,500-¥8,000</td>
+                                        <td class="py-3 px-4">¥2,000-¥3,500</td>
+                                        <td class="py-3 px-4">¥200-¥400</td>
+                                        <td class="py-3 px-4 text-green-600 font-medium">¥6,000-¥12,000</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4 font-medium">中山</td>
+                                        <td class="py-3 px-4">¥2,000-¥5,000</td>
+                                        <td class="py-3 px-4">¥1,500-¥2,800</td>
+                                        <td class="py-3 px-4">¥150-¥300</td>
+                                        <td class="py-3 px-4 text-green-600 font-medium">¥4,000-¥8,500</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4 font-medium">佛山</td>
+                                        <td class="py-3 px-4">¥2,500-¥6,000</td>
+                                        <td class="py-3 px-4">¥1,800-¥3,200</td>
+                                        <td class="py-3 px-4">¥200-¥400</td>
+                                        <td class="py-3 px-4 text-green-600 font-medium">¥5,000-¥10,000</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4 font-medium">惠州</td>
+                                        <td class="py-3 px-4">¥1,500-¥4,000</td>
+                                        <td class="py-3 px-4">¥1,200-¥2,500</td>
+                                        <td class="py-3 px-4">¥150-¥300</td>
+                                        <td class="py-3 px-4 text-green-600 font-medium">¥3,500-¥7,000</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4 font-medium">江門</td>
+                                        <td class="py-3 px-4">¥1,200-¥3,500</td>
+                                        <td class="py-3 px-4">¥1,000-¥2,200</td>
+                                        <td class="py-3 px-4">¥100-¥250</td>
+                                        <td class="py-3 px-4 text-green-600 font-medium">¥3,000-¥6,000</td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50">
+                                        <td class="py-3 px-4 font-medium">肇慶</td>
+                                        <td class="py-3 px-4">¥1,000-¥3,000</td>
+                                        <td class="py-3 px-4">¥800-¥2,000</td>
+                                        <td class="py-3 px-4">¥100-¥200</td>
+                                        <td class="py-3 px-4 text-green-600 font-medium">¥2,500-¥5,500</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="text-sm text-gray-500"><i class="fas fa-info-circle mr-1"></i> 以上為一般生活標準，實際支出因個人生活方式而異。對比香港月均生活費約HK$20,000-50,000，大灣區生活成本僅為香港的1/3至1/5。</p>
+                    </div>
+
+                    <!-- 城市特色分類推薦 -->
+                    <div class="mt-6">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800"><i class="fas fa-star mr-2 text-yellow-500"></i>城市特色分類推薦</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <div class="bg-gradient-to-br from-blue-400 to-blue-600 text-white p-4 rounded-lg">
+                                <h4 class="font-bold mb-2"><i class="fas fa-briefcase mr-2"></i>創業者</h4>
+                                <p class="text-sm">深圳、廣州</p>
+                                <p class="text-xs mt-1 opacity-80">前海、南沙自貿區</p>
                             </div>
-                            <div class="bg-green-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-green-800 mb-2">廣州</h4>
-                                <p class="text-gray-700">租金: ¥3,000-¥10,000/月</p>
-                                <p class="text-gray-700">飲食: ¥1,800-¥3,500/月</p>
-                                <p class="text-gray-700">交通: ¥250-¥600/月</p>
+                            <div class="bg-gradient-to-br from-green-400 to-green-600 text-white p-4 rounded-lg">
+                                <h4 class="font-bold mb-2"><i class="fas fa-umbrella-beach mr-2"></i>退休養老</h4>
+                                <p class="text-sm">珠海、中山、惠州</p>
+                                <p class="text-xs mt-1 opacity-80">空氣好、物價低</p>
                             </div>
-                            <div class="bg-purple-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-purple-800 mb-2">珠海</h4>
-                                <p class="text-gray-700">租金: ¥2,500-¥6,000/月</p>
-                                <p class="text-gray-700">飲食: ¥1,500-¥3,000/月</p>
-                                <p class="text-gray-700">交通: ¥200-¥500/月</p>
+                            <div class="bg-gradient-to-br from-purple-400 to-purple-600 text-white p-4 rounded-lg">
+                                <h4 class="font-bold mb-2"><i class="fas fa-laptop mr-2"></i>遠程工作者</h4>
+                                <p class="text-sm">東莞、佛山</p>
+                                <p class="text-xs mt-1 opacity-80">租金低、網絡穩定</p>
+                            </div>
+                            <div class="bg-gradient-to-br from-orange-400 to-orange-600 text-white p-4 rounded-lg">
+                                <h4 class="font-bold mb-2"><i class="fas fa-child mr-2"></i>家庭定居</h4>
+                                <p class="text-sm">廣州、珠海</p>
+                                <p class="text-xs mt-1 opacity-80">教育醫療完善</p>
                             </div>
                         </div>
                     </div>
@@ -203,58 +529,161 @@
                         <i class="fas fa-business-time section-icon"></i>
                         <h2 class="text-2xl font-bold text-gray-800 ml-2">退休/創業</h2>
                     </div>
-                    
+
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- 退休資訊 -->
                         <div>
                             <h3 class="text-xl font-semibold mb-3 text-gray-800"><i class="fas fa-umbrella-beach mr-2 text-yellow-500"></i>退休資訊</h3>
+
+                            <div class="bg-gradient-to-br from-yellow-50 to-orange-50 p-4 rounded-lg mb-4">
+                                <h4 class="font-medium text-yellow-800 mb-2"><i class="fas fa-coins mr-2"></i>生活成本分析</h4>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <div class="bg-white p-2 rounded">
+                                        <p class="text-gray-500">香港月均支出</p>
+                                        <p class="font-bold text-red-500">HK$15,000-40,000</p>
+                                    </div>
+                                    <div class="bg-white p-2 rounded">
+                                        <p class="text-gray-500">大灣區月均支出</p>
+                                        <p class="font-bold text-green-500">¥5,000-15,000</p>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-gray-600 mt-2">節省幅度可達50-70%</p>
+                            </div>
+
                             <ul class="space-y-2 text-gray-700">
                                 <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>大灣區退休生活成本約為香港的1/3至1/2</span></li>
                                 <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>珠海、中山、惠州等地氣候宜人，適合退休生活</span></li>
                                 <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>多個城市設有港式醫療服務，如深圳港大醫院</span></li>
                                 <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>部分城市提供長者優惠，如公交免費、景點門票折扣</span></li>
                                 <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>可申請內地居住證，享受當地社保醫療福利</span></li>
+                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>港人可享受為期180天/年的內地醫療保障</span></li>
                             </ul>
-                            
+
                             <div class="mt-4 bg-blue-50 p-4 rounded-lg">
                                 <h4 class="font-medium text-blue-800 mb-2"><i class="fas fa-info-circle mr-2"></i>退休熱點推薦</h4>
-                                <ul class="list-disc pl-5 text-gray-700">
-                                    <li>珠海橫琴 - 與澳門相鄰，粵澳合作示範區</li>
-                                    <li>中山三鄉 - 港人聚居地，生活配套成熟</li>
-                                    <li>惠州大亞灣 - 海濱城市，環境優美</li>
+                                <div class="space-y-3">
+                                    <div class="flex items-start">
+                                        <i class="fas fa-map-marker-alt text-red-500 mt-1 mr-2"></i>
+                                        <div>
+                                            <p class="font-medium">珠海橫琴</p>
+                                            <p class="text-sm text-gray-600">與澳門相鄰，粵澳合作示範區，環境優美</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i class="fas fa-map-marker-alt text-green-500 mt-1 mr-2"></i>
+                                        <div>
+                                            <p class="font-medium">中山三鄉</p>
+                                            <p class="text-sm text-gray-600">港人聚居地，生活配套成熟，節奏悠閒</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i class="fas fa-map-marker-alt text-blue-500 mt-1 mr-2"></i>
+                                        <div>
+                                            <p class="font-medium">惠州大亞灣</p>
+                                            <p class="text-sm text-gray-600">海濱城市，環境優美，樓價相對低廉</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <i class="fas fa-map-marker-alt text-purple-500 mt-1 mr-2"></i>
+                                        <div>
+                                            <p class="font-medium">肇慶七星岩</p>
+                                            <p class="text-sm text-gray-600">空氣清新，風景優美，養老勝地</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-green-800 mb-2"><i class="fas fa-heartbeat mr-2"></i>醫療保障選項</h4>
+                                <ul class="space-y-1 text-sm text-gray-700">
+                                    <li><i class="fas fa-hospital text-green-500 mr-2"></i>深圳港大醫院 - 港式服務，英語溝通</li>
+                                    <li><i class="fas fa-hospital text-green-500 mr-2"></i>珠海希瑪林順潮眼科醫院 - 專科服務</li>
+                                    <li><i class="fas fa-hospital text-green-500 mr-2"></i>廣州和睦家醫院 - 國際標準</li>
+                                    <li><i class="fas fa-notes-medical text-green-500 mr-2"></i>港人可參加城鄉居民基本醫療保險</li>
                                 </ul>
                             </div>
                         </div>
-                        
+
+                        <!-- 創業資訊 -->
                         <div>
                             <h3 class="text-xl font-semibold mb-3 text-gray-800"><i class="fas fa-lightbulb mr-2 text-blue-500"></i>創業資訊</h3>
+
+                            <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-4 rounded-lg mb-4">
+                                <h4 class="font-medium text-blue-800 mb-2"><i class="fas fa-gem mr-2"></i>自貿區優惠政策</h4>
+                                <div class="grid grid-cols-1 gap-2 text-sm">
+                                    <div class="bg-white p-2 rounded flex items-center">
+                                        <span class="w-3 h-3 bg-red-500 rounded-full mr-2"></span>
+                                        <span><strong>前海（深圳）</strong> - 企業所得稅15%優惠</span>
+                                    </div>
+                                    <div class="bg-white p-2 rounded flex items-center">
+                                        <span class="w-3 h-3 bg-green-500 rounded-full mr-2"></span>
+                                        <span><strong>橫琴（珠海）</strong> - 人才補貼最高¥100萬</span>
+                                    </div>
+                                    <div class="bg-white p-2 rounded flex items-center">
+                                        <span class="w-3 h-3 bg-blue-500 rounded-full mr-2"></span>
+                                        <span><strong>南沙（廣州）</strong> - 租金補貼最高¥50萬</span>
+                                    </div>
+                                </div>
+                            </div>
+
                             <ul class="space-y-2 text-gray-700">
                                 <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>前海、橫琴、南沙三大自貿區提供稅收優惠</span></li>
                                 <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>深圳創業補貼最高可達¥45萬</span></li>
-                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>廣州天河區、深圳南山區創業氛圍濃厚</span></li>
-                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>可申請"港澳青年創新創業基地"入駐</span></li>
-                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>簡化公司註冊流程，部分城市可"一日辦結"</span></li>
+                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>廣州天河區、深圳南山區創業氛圍浓厚</span></li>
+                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>可申請「港澳青年創新創業基地」入駐</span></li>
+                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>簡化公司註冊流程，部分城市可「一日辦結」</span></li>
+                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>港資企業可享受「國民待遇」負面清單管理</span></li>
                             </ul>
-                            
+
                             <div class="mt-4 bg-green-50 p-4 rounded-lg">
                                 <h4 class="font-medium text-green-800 mb-2"><i class="fas fa-chart-pie mr-2"></i>熱門創業領域</h4>
                                 <div class="flex flex-wrap gap-2">
-                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">科技創新</span>
-                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">跨境電商</span>
-                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">文化創意</span>
-                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">專業服務</span>
-                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">餐飲品牌</span>
-                                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">教育培訓</span>
+                                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">科技創新</span>
+                                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">跨境電商</span>
+                                    <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">文化創意</span>
+                                    <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">專業服務</span>
+                                    <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">餐飲品牌</span>
+                                    <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">教育培訓</span>
+                                    <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">醫療健康</span>
+                                    <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">金融科技</span>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 bg-purple-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-purple-800 mb-2"><i class="fas fa-hand-holding-usd mr-2"></i>創業補貼一覽</h4>
+                                <div class="space-y-2 text-sm">
+                                    <div class="flex justify-between items-center">
+                                        <span>深圳初創補貼</span>
+                                        <span class="font-bold text-green-600">¥10,000-¥450,000</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span>廣州創業補貼</span>
+                                        <span class="font-bold text-green-600">¥5,000-¥200,000</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span>前海租金補貼</span>
+                                        <span class="font-bold text-green-600">高達¥500,000</span>
+                                    </div>
+                                    <div class="flex justify-between items-center">
+                                        <span>橫琴人才獎勵</span>
+                                        <span class="font-bold text-green-600">¥300,000-¥1,000,000</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
+                    <!-- 實用連結 -->
                     <div class="mt-6">
                         <h3 class="text-xl font-semibold mb-3 text-gray-800"><i class="fas fa-link mr-2"></i>實用連結</h3>
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                            <a href="#" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-lg transition flex items-center">
+                            <a href="https://www.gov.hk/tc/residents/immigration/chineseinoutbound/chiangtaiwan.htm" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-lg transition flex items-center">
                                 <i class="fas fa-external-link-alt text-blue-500 mr-2"></i>
-                                <span>大灣區政務服務網</span>
+                                <span>香港政府入境事務處</span>
+                            </a>
+                            <a href="https://www.gov.hk/tc/residents/immigration/chineseinoutbound/greatbay.htm" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-lg transition flex items-center">
+                                <i class="fas fa-external-link-alt text-blue-500 mr-2"></i>
+                                <span>大灣區資訊網</span>
                             </a>
                             <a href="#" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-lg transition flex items-center">
                                 <i class="fas fa-external-link-alt text-blue-500 mr-2"></i>
@@ -262,8 +691,47 @@
                             </a>
                             <a href="#" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-lg transition flex items-center">
                                 <i class="fas fa-external-link-alt text-blue-500 mr-2"></i>
-                                <span>退休人士居住證申請指南</span>
+                                <span>前海深港現代服務業合作區</span>
                             </a>
+                            <a href="#" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-lg transition flex items-center">
+                                <i class="fas fa-external-link-alt text-blue-500 mr-2"></i>
+                                <span>橫琴粵澳深度合作區</span>
+                            </a>
+                            <a href="#" class="bg-gray-100 hover:bg-gray-200 p-3 rounded-lg transition flex items-center">
+                                <i class="fas fa-external-link-alt text-blue-500 mr-2"></i>
+                                <span>南沙粵港澳全面合作示範區</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 創業故事分享 -->
+                    <div class="mt-6">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800"><i class="fas fa-users mr-2 text-purple-500"></i>港人創業故事</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-lg">
+                                <div class="flex items-center mb-2">
+                                    <div class="w-10 h-10 bg-purple-200 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-user text-purple-600"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium">陳先生 - 深圳前海</p>
+                                        <p class="text-xs text-gray-500">跨境電商創業者</p>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-gray-700">「前海的租金補貼和稅收優惠讓我的初創企業減輕了不少負擔，深圳的供應鏈優勢也是香港無法比擬的。」</p>
+                            </div>
+                            <div class="bg-gradient-to-r from-blue-50 to-cyan-50 p-4 rounded-lg">
+                                <div class="flex items-center mb-2">
+                                    <div class="w-10 h-10 bg-blue-200 rounded-full flex items-center justify-center mr-3">
+                                        <i class="fas fa-user text-blue-600"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium">李女士 - 珠海橫琴</p>
+                                        <p class="text-xs text-gray-500">教育培訓創業者</p>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-gray-700">「橫琴的環境很好，靠近澳門，吸引了許多內地家長讓孩子學習英語。我的英語培訓班發展很快。」</p>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -274,77 +742,203 @@
                         <i class="fas fa-home section-icon"></i>
                         <h2 class="text-2xl font-bold text-gray-800 ml-2">買樓/租樓</h2>
                     </div>
-                    
+
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- 買樓資訊 -->
                         <div>
                             <h3 class="text-xl font-semibold mb-3 text-gray-800"><i class="fas fa-key mr-2 text-purple-500"></i>買樓資訊</h3>
-                            <ul class="space-y-2 text-gray-700">
-                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>港人可在大灣區9市購買一套自住住宅</span></li>
-                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>需提供港澳居民身份證、通行證及境內無房證明</span></li>
-                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>首付比例一般為30%，貸款利率約4.1-4.9%</span></li>
-                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>需繳納契稅(1-3%)、印花稅(0.05%)等費用</span></li>
-                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>房產證辦理時間約30-90個工作日</span></li>
-                            </ul>
-                            
-                            <div class="mt-4 bg-purple-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-purple-800 mb-2"><i class="fas fa-map-marker-alt mr-2"></i>熱門購房區域</h4>
-                                <ul class="list-disc pl-5 text-gray-700">
-                                    <li>深圳 - 南山、福田、寶安中心區</li>
-                                    <li>廣州 - 天河、珠江新城、番禺</li>
-                                    <li>珠海 - 橫琴、香洲、金灣</li>
-                                    <li>中山 - 火炬開發區、東區</li>
+
+                            <div class="bg-gradient-to-r from-purple-50 to-blue-50 p-4 rounded-lg mb-4">
+                                <h4 class="font-medium text-purple-800 mb-2"><i class="fas fa-file-contract mr-2"></i>港人購房資格</h4>
+                                <ul class="space-y-1 text-sm text-gray-700">
+                                    <li><i class="fas fa-check text-green-500 mr-2"></i>港人可在粵港澳大灣區9市各購買一套自住住宅</li>
+                                    <li><i class="fas fa-check text-green-500 mr-2"></i>需提供港澳居民身份證、回鄉證</li>
+                                    <li><i class="fas fa-check text-green-500 mr-2"></i>需提供境內無房產證明（房產查冊）</li>
+                                    <li><i class="fas fa-check text-green-500 mr-2"></i>部分城市需提供居住證或社保證明</li>
                                 </ul>
                             </div>
+
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>首付比例一般為30%，公積金貸款利率約3.1-3.5%</span></li>
+                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>商業貸款利率約4.1-4.9%（視乎城市及銀行）</span></li>
+                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>需繳納契稅（1-3%）、印花稅（0.05%）等費用</span></li>
+                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>房產證辦理時間約30-90個工作日</span></li>
+                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>港人可申請公積金貸款，利率較商業貸款低</span></li>
+                            </ul>
+
+                            <div class="mt-4 bg-purple-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-purple-800 mb-2"><i class="fas fa-map-marker-alt mr-2"></i>熱門購房區域推薦</h4>
+                                <div class="space-y-3">
+                                    <div class="bg-white p-2 rounded">
+                                        <p class="font-medium text-red-600">深圳</p>
+                                        <p class="text-sm text-gray-600">南山（前海、科技園）、福田（CBD）、寶安中心區</p>
+                                        <p class="text-xs text-gray-500">均價：¥60,000-¥120,000/㎡</p>
+                                    </div>
+                                    <div class="bg-white p-2 rounded">
+                                        <p class="font-medium text-green-600">廣州</p>
+                                        <p class="text-sm text-gray-600">天河（珠江新城）、番禺（萬博）、黃埔</p>
+                                        <p class="text-xs text-gray-500">均價：¥30,000-¥80,000/㎡</p>
+                                    </div>
+                                    <div class="bg-white p-2 rounded">
+                                        <p class="font-medium text-cyan-600">珠海</p>
+                                        <p class="text-sm text-gray-600">橫琴（粵澳合作區）、香洲（金灣）、唐家灣</p>
+                                        <p class="text-xs text-gray-500">均價：¥25,000-¥50,000/㎡</p>
+                                    </div>
+                                    <div class="bg-white p-2 rounded">
+                                        <p class="font-medium text-orange-600">東莞/中山</p>
+                                        <p class="text-sm text-gray-600">東莞市區、松山湖；中山東區、火炬區</p>
+                                        <p class="text-xs text-gray-500">均價：¥15,000-¥30,000/㎡</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-blue-800 mb-2"><i class="fas fa-calculator mr-2"></i>購房費用計算（以¥3,000,000單位為例）</h4>
+                                <div class="space-y-1 text-sm">
+                                    <div class="flex justify-between"><span>樓價</span><span>¥3,000,000</span></div>
+                                    <div class="flex justify-between"><span>首付款（30%）</span><span>¥900,000</span></div>
+                                    <div class="flex justify-between"><span>契稅（1.5%）</span><span>¥45,000</span></div>
+                                    <div class="flex justify-between"><span>印花稅（0.05%）</span><span>¥1,500</span></div>
+                                    <div class="flex justify-between"><span>中介費（1-2%）</span><span>¥30,000-60,000</span></div>
+                                    <div class="flex justify-between font-bold border-t pt-1"><span>預計初期支出</span><span>¥980,000-¥1,010,000</span></div>
+                                </div>
+                            </div>
                         </div>
-                        
+
+                        <!-- 租樓資訊 -->
                         <div>
                             <h3 class="text-xl font-semibold mb-3 text-gray-800"><i class="fas fa-file-signature mr-2 text-orange-500"></i>租樓資訊</h3>
+
+                            <div class="bg-gradient-to-r from-orange-50 to-yellow-50 p-4 rounded-lg mb-4">
+                                <h4 class="font-medium text-orange-800 mb-2"><i class="fas fa-info-circle mr-2"></i>租樓流程</h4>
+                                <ol class="space-y-1 text-sm text-gray-700">
+                                    <li class="flex items-center"><span class="w-5 h-5 bg-orange-500 text-white rounded-full text-xs flex items-center justify-center mr-2">1</span>選擇區域及小區</li>
+                                    <li class="flex items-center"><span class="w-5 h-5 bg-orange-500 text-white rounded-full text-xs flex items-center justify-center mr-2">2</span>聯繫中介或通過APP預約</li>
+                                    <li class="flex items-center"><span class="w-5 h-5 bg-orange-500 text-white rounded-full text-xs flex items-center justify-center mr-2">3</span>實地看房並檢查設施</li>
+                                    <li class="flex items-center"><span class="w-5 h-5 bg-orange-500 text-white rounded-full text-xs flex items-center justify-center mr-2">4</span>簽訂租賃合同（一年起）</li>
+                                    <li class="flex items-center"><span class="w-5 h-5 bg-orange-500 text-white rounded-full text-xs flex items-center justify-center mr-2">5</span>支付押金（一般押二付一）</li>
+                                    <li class="flex items-center"><span class="w-5 h-5 bg-orange-500 text-white rounded-full text-xs flex items-center justify-center mr-2">6</span>交接房屋、抄讀水電錶</li>
+                                </ol>
+                            </div>
+
                             <ul class="space-y-2 text-gray-700">
                                 <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>租金約為香港同類物業的1/3至1/5</span></li>
-                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>一般需支付"押二付一"(兩個月押金+一個月租金)</span></li>
+                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>一般需支付「押二付一」（兩個月押金+一個月租金）</span></li>
                                 <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>建議通過正規中介或平台租房，如鏈家、貝殼</span></li>
                                 <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>簽約時需檢查房產證原件及業主身份證明</span></li>
                                 <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>水電費、物業費等需在合同中明確責任</span></li>
+                                <li class="flex items-start"><i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i><span>提前終止合約一般需賠償一個月租金</span></li>
                             </ul>
-                            
+
                             <div class="mt-4 bg-orange-50 p-4 rounded-lg">
-                                <h4 class="font-medium text-orange-800 mb-2"><i class="fas fa-tags mr-2"></i>租金參考(月租)</h4>
-                                <div class="grid grid-cols-2 gap-2">
-                                    <div>
-                                        <p class="text-sm text-gray-600">深圳一房一廳</p>
-                                        <p class="font-medium">¥3,000-¥6,000</p>
+                                <h4 class="font-medium text-orange-800 mb-2"><i class="fas fa-tags mr-2"></i>各城市租金參考（月租）</h4>
+                                <div class="overflow-x-auto">
+                                    <table class="min-w-full text-sm">
+                                        <thead>
+                                            <tr class="text-left">
+                                                <th class="pb-2">城市</th>
+                                                <th class="pb-2">一房</th>
+                                                <th class="pb-2">兩房</th>
+                                                <th class="pb-2">三房</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-gray-700">
+                                            <tr><td>深圳</td><td>¥3,500-¥8,000</td><td>¥6,000-¥15,000</td><td>¥10,000-¥25,000</td></tr>
+                                            <tr><td>廣州</td><td>¥2,500-¥5,000</td><td>¥4,000-¥10,000</td><td>¥6,000-¥15,000</td></tr>
+                                            <tr><td>東莞</td><td>¥1,500-¥3,000</td><td>¥2,500-¥5,000</td><td>¥3,500-¥8,000</td></tr>
+                                            <tr><td>珠海</td><td>¥2,000-¥4,000</td><td>¥3,500-¥7,000</td><td>¥5,000-¥10,000</td></tr>
+                                            <tr><td>中山</td><td>¥1,200-¥2,500</td><td>¥2,000-¥4,000</td><td>¥3,000-¥6,000</td></tr>
+                                            <tr><td>佛山</td><td>¥1,500-¥3,000</td><td>¥2,500-¥5,000</td><td>¥3,500-¥7,000</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-green-800 mb-2"><i class="fas fa-search mr-2"></i>推薦租房平台</h4>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <div class="bg-white p-2 rounded">
+                                        <p class="font-medium">貝殼找房</p>
+                                        <p class="text-xs text-gray-500">真房源、VR看房</p>
                                     </div>
-                                    <div>
-                                        <p class="text-sm text-gray-600">廣州兩房一廳</p>
-                                        <p class="font-medium">¥2,500-¥5,000</p>
+                                    <div class="bg-white p-2 rounded">
+                                        <p class="font-medium">鏈家</p>
+                                        <p class="text-xs text-gray-500">中介服務專業</p>
                                     </div>
-                                    <div>
-                                        <p class="text-sm text-gray-600">珠海三房兩廳</p>
-                                        <p class="font-medium">¥2,000-¥4,000</p>
+                                    <div class="bg-white p-2 rounded">
+                                        <p class="font-medium">自如</p>
+                                        <p class="text-xs text-gray-500">品質公寓、統一裝修</p>
                                     </div>
-                                    <div>
-                                        <p class="text-sm text-gray-600">中山別墅</p>
-                                        <p class="font-medium">¥4,000-¥8,000</p>
+                                    <div class="bg-white p-2 rounded">
+                                        <p class="font-medium">蛋殼公寓</p>
+                                        <p class="text-xs text-gray-500">年輕人選擇多</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
+                    <!-- 注意事項 -->
                     <div class="mt-6">
                         <h3 class="text-xl font-semibold mb-3 text-gray-800"><i class="fas fa-handshake mr-2"></i>注意事項</h3>
-                        <div class="bg-yellow-50 p-4 rounded-lg">
-                            <div class="flex items-start">
-                                <i class="fas fa-exclamation-triangle text-yellow-500 mt-1 mr-3"></i>
-                                <div>
-                                    <h4 class="font-medium text-yellow-800 mb-2">購房風險提示</h4>
-                                    <ul class="list-disc pl-5 text-gray-700">
-                                        <li>確認開發商具備"五證"（國有土地使用證、建設用地規劃許可證、建設工程規劃許可證、建設工程施工許可證、商品房預售許可證）</li>
-                                        <li>避免購買"小產權房"，此類房產不受法律保護</li>
-                                        <li>謹慎對待"不限購"宣傳，確認符合當地購房政策</li>
-                                        <li>建議聘請專業律師審查合同條款</li>
-                                    </ul>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-yellow-50 p-4 rounded-lg">
+                                <div class="flex items-start">
+                                    <i class="fas fa-exclamation-triangle text-yellow-500 mt-1 mr-3"></i>
+                                    <div>
+                                        <h4 class="font-medium text-yellow-800 mb-2">購房風險提示</h4>
+                                        <ul class="list-disc pl-5 text-gray-700 text-sm space-y-1">
+                                            <li>確認開發商具備「五證」（國有土地使用證、建設用地規劃許可證、建築工程規劃許可證、建築工程施工許可證、商品房預售許可證）</li>
+                                            <li>避免購買「小產權房」，此類房產不受法律保護</li>
+                                            <li>謹慎對待「不限購」宣傳，確認符合當地購房政策</li>
+                                            <li>建議聘請專業律師審查合同條款</li>
+                                            <li>仔細閱讀公攤面積及面積誤差條款</li>
+                                        </ul>
+                                    </div>
                                 </div>
+                            </div>
+                            <div class="bg-red-50 p-4 rounded-lg">
+                                <div class="flex items-start">
+                                    <i class="fas fa-exclamation-circle text-red-500 mt-1 mr-3"></i>
+                                    <div>
+                                        <h4 class="font-medium text-red-800 mb-2">租房陷阱防範</h4>
+                                        <ul class="list-disc pl-5 text-gray-700 text-sm space-y-1">
+                                            <li>警惕「低租金」或「免押金」陷阱</li>
+                                            <li>不要一次性預付長期租金</li>
+                                            <li>核實房東身份及房產證真假</li>
+                                            <li>入住前拍照記錄房屋狀態</li>
+                                            <li>明確責任範圍：維修誰負責</li>
+                                            <li>避免租住「群租房」或「劏房」</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 港人購房優勢 -->
+                    <div class="mt-6">
+                        <h3 class="text-xl font-semibold mb-3 text-gray-800"><i class="fas fa-award mr-2 text-blue-500"></i>港人購房優勢</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <div class="bg-gradient-to-br from-blue-500 to-blue-600 text-white p-3 rounded-lg text-center">
+                                <i class="fas fa-passport text-2xl mb-2"></i>
+                                <p class="font-medium">同等待遇</p>
+                                <p class="text-xs opacity-80">享有與內地居民同等的購房待遇</p>
+                            </div>
+                            <div class="bg-gradient-to-br from-green-500 to-green-600 text-white p-3 rounded-lg text-center">
+                                <i class="fas fa-money-bill-wave text-2xl mb-2"></i>
+                                <p class="font-medium">可用港幣</p>
+                                <p class="text-xs opacity-80">部分樓盤接受港幣付款</p>
+                            </div>
+                            <div class="bg-gradient-to-br from-purple-500 to-purple-600 text-white p-3 rounded-lg text-center">
+                                <i class="fas fa-percent text-2xl mb-2"></i>
+                                <p class="font-medium">贷款利率</p>
+                                <p class="text-xs opacity-80">可申請内地銀行按揭贷款</p>
+                            </div>
+                            <div class="bg-gradient-to-br from-orange-500 to-orange-600 text-white p-3 rounded-lg text-center">
+                                <i class="fas fa-file-alt text-2xl mb-2"></i>
+                                <p class="font-medium">稅務安排</p>
+                                <p class="text-xs opacity-80">建議諮詢專業稅務顧問</p>
                             </div>
                         </div>
                     </div>
@@ -619,44 +1213,326 @@
                     
                     <div class="mt-6">
                         <h3 class="text-xl font-semibold mb-3 text-gray-800"><i class="fas fa-mobile-alt mr-2"></i>必備APP推薦</h3>
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
-                                <i class="fab fa-weixin text-green-500" aria-hidden="true" alt="WeChat" class="w-12 h-12 mx-auto mb-2 rounded"></i>
-                                <h4 class="font-medium">微信</h4>
-                                <p class="text-xs text-gray-500">社交、支付、生活服務</p>
+
+                        <!-- 社交與通訊 -->
+                        <div class="mb-6">
+                            <h4 class="text-lg font-medium text-gray-700 mb-3 flex items-center">
+                                <span class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-2">
+                                    <i class="fas fa-comments text-blue-500"></i>
+                                </span>
+                                社交與通訊
+                            </h4>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#07C160"/>
+                                        <text x="50" y="62" font-size="40" fill="white" text-anchor="middle" font-family="Arial">微</text>
+                                    </svg>
+                                    <h4 class="font-medium">微信</h4>
+                                    <p class="text-xs text-gray-500">社交、支付、生活服務</p>
+                                </div>
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#FF3B30"/>
+                                        <text x="50" y="62" font-size="36" fill="white" text-anchor="middle" font-family="Arial">QQ</text>
+                                    </svg>
+                                    <h4 class="font-medium">QQ</h4>
+                                    <p class="text-xs text-gray-500">即時通訊、文件傳輸</p>
+                                </div>
                             </div>
-                            <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
-                                <i class="fab fa-alipay text-blue-500" aria-hidden="true" class="w-12 h-12 mx-auto mb-2 rounded"></i>
-                                <h4 class="font-medium">支付寶</h4>
-                                <p class="text-xs text-gray-500">電子支付、生活繳費</p>
+                        </div>
+
+                        <!-- 電子支付 -->
+                        <div class="mb-6">
+                            <h4 class="text-lg font-medium text-gray-700 mb-3 flex items-center">
+                                <span class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-2">
+                                    <i class="fas fa-wallet text-green-500"></i>
+                                </span>
+                                電子支付
+                            </h4>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#1677FF"/>
+                                        <text x="50" y="58" font-size="24" font-weight="bold" fill="white" text-anchor="middle" font-family="Microsoft YaHei">支付寶</text>
+                                    </svg>
+                                    <h4 class="font-medium">支付寶</h4>
+                                    <p class="text-xs text-gray-500">電子支付、生活繳費</p>
+                                </div>
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#07C160"/>
+                                        <text x="50" y="58" font-size="24" font-weight="bold" fill="white" text-anchor="middle" font-family="Microsoft YaHei">微信</text>
+                                    </svg>
+                                    <h4 class="font-medium">微信支付</h4>
+                                    <p class="text-xs text-gray-500">行動支付、红包轉賬</p>
+                                </div>
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#FF6600"/>
+                                        <text x="50" y="62" font-size="28" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">雲</text>
+                                    </svg>
+                                    <h4 class="font-medium">雲閃付</h4>
+                                    <p class="text-xs text-gray-500">銀行卡整合、跨行轉帳</p>
+                                </div>
                             </div>
-                            <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
-                                <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                    <defs>
-                                        <linearGradient id="mtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                            <stop offset="0%" style="stop-color:#FF6633"/>
-                                            <stop offset="100%" style="stop-color:#FF3333"/>
-                                        </linearGradient>
-                                    </defs>
-                                    <circle cx="50" cy="50" r="48" fill="url(#mtGrad)"/>
-                                    <text x="50" y="58" font-size="28" font-weight="bold" fill="white" text-anchor="middle" font-family="Microsoft YaHei, SimHei, sans-serif">美團</text>
-                                </svg>
-                                <h4 class="font-medium">美團</h4>
-                                <p class="text-xs text-gray-500">外賣、團購、酒店預訂</p>
+                        </div>
+
+                        <!-- 外賣與餐飲 -->
+                        <div class="mb-6">
+                            <h4 class="text-lg font-medium text-gray-700 mb-3 flex items-center">
+                                <span class="w-8 h-8 bg-orange-100 rounded-full flex items-center justify-center mr-2">
+                                    <i class="fas fa-utensils text-orange-500"></i>
+                                </span>
+                                外賣與餐飲
+                            </h4>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient id="mtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" style="stop-color:#FF6633"/>
+                                                <stop offset="100%" style="stop-color:#FF3333"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <circle cx="50" cy="50" r="48" fill="url(#mtGrad)"/>
+                                        <text x="50" y="58" font-size="28" font-weight="bold" fill="white" text-anchor="middle" font-family="Microsoft YaHei, SimHei, sans-serif">美團</text>
+                                    </svg>
+                                    <h4 class="font-medium">美團</h4>
+                                    <p class="text-xs text-gray-500">外賣、團購、酒店</p>
+                                </div>
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient id="elmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" style="stop-color:#FFD700"/>
+                                                <stop offset="100%" style="stop-color:#FFA500"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <circle cx="50" cy="50" r="48" fill="url(#elmGrad)"/>
+                                        <text x="50" y="58" font-size="28" font-weight="bold" fill="white" text-anchor="middle" font-family="Microsoft YaHei, SimHei, sans-serif">餓了麼</text>
+                                    </svg>
+                                    <h4 class="font-medium">餓了麼</h4>
+                                    <p class="text-xs text-gray-500">外賣配送、即時配送</p>
+                                </div>
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <linearGradient id="dpGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                                <stop offset="0%" style="stop-color:#FF6633"/>
+                                                <stop offset="100%" style="stop-color:#FF3333"/>
+                                            </linearGradient>
+                                        </defs>
+                                        <circle cx="50" cy="50" r="48" fill="url(#dpGrad)"/>
+                                        <text x="50" y="58" font-size="24" font-weight="bold" fill="white" text-anchor="middle" font-family="Microsoft YaHei, SimHei, sans-serif">大眾點評</text>
+                                    </svg>
+                                    <h4 class="font-medium">大眾點評</h4>
+                                    <p class="text-xs text-gray-500">餐廳評價、優惠券</p>
+                                </div>
                             </div>
-                            <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
-                                <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                    <defs>
-                                        <linearGradient id="dpGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                            <stop offset="0%" style="stop-color:#FF6633"/>
-                                            <stop offset="100%" style="stop-color:#FF3333"/>
-                                        </linearGradient>
-                                    </defs>
-                                    <circle cx="50" cy="50" r="48" fill="url(#dpGrad)"/>
-                                    <text x="50" y="58" font-size="24" font-weight="bold" fill="white" text-anchor="middle" font-family="Microsoft YaHei, SimHei, sans-serif">大眾點評</text>
-                                </svg>
-                                <h4 class="font-medium">大眾點評</h4>
-                                <p class="text-xs text-gray-500">餐廳評價、優惠券</p>
+                        </div>
+
+                        <!-- 交通出行 -->
+                        <div class="mb-6">
+                            <h4 class="text-lg font-medium text-gray-700 mb-3 flex items-center">
+                                <span class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-2">
+                                    <i class="fas fa-car text-purple-500"></i>
+                                </span>
+                                交通出行
+                            </h4>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#00C853"/>
+                                        <text x="50" y="58" font-size="20" font-weight="bold" fill="white" text-anchor="middle" font-family="Microsoft YaHei">高德地圖</text>
+                                    </svg>
+                                    <h4 class="font-medium">高德地圖</h4>
+                                    <p class="text-xs text-gray-500">導航、地圖、實時路況</p>
+                                </div>
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#4A90D9"/>
+                                        <text x="50" y="58" font-size="20" font-weight="bold" fill="white" text-anchor="middle" font-family="Microsoft YaHei">百度地圖</text>
+                                    </svg>
+                                    <h4 class="font-medium">百度地圖</h4>
+                                    <p class="text-xs text-gray-500">3D地圖、街景、AR導航</p>
+                                </div>
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#3560D9"/>
+                                        <text x="50" y="62" font-size="28" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">滴</text>
+                                    </svg>
+                                    <h4 class="font-medium">滴滴出行</h4>
+                                    <p class="text-xs text-gray-500">網約車、代駕、順風車</p>
+                                </div>
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#F7732D"/>
+                                        <text x="50" y="62" font-size="28" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">12306</text>
+                                    </svg>
+                                    <h4 class="font-medium">鐵路12306</h4>
+                                    <p class="text-xs text-gray-500">高鐵票務、行李托運</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 購物與電商 -->
+                        <div class="mb-6">
+                            <h4 class="text-lg font-medium text-gray-700 mb-3 flex items-center">
+                                <span class="w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center mr-2">
+                                    <i class="fas fa-shopping-bag text-pink-500"></i>
+                                </span>
+                                購物與電商
+                            </h4>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#FF5000"/>
+                                        <text x="50" y="62" font-size="36" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">淘</text>
+                                    </svg>
+                                    <h4 class="font-medium">淘寶</h4>
+                                    <p class="text-xs text-gray-500">網購、百貨、拍賣</p>
+                                </div>
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#E2231A"/>
+                                        <text x="50" y="62" font-size="36" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">京</text>
+                                    </svg>
+                                    <h4 class="font-medium">京東</h4>
+                                    <p class="text-xs text-gray-500">電商、物流快速、当日達</p>
+                                </div>
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#FF4400"/>
+                                        <text x="50" y="62" font-size="32" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">拼</text>
+                                    </svg>
+                                    <h4 class="font-medium">拼多多</h4>
+                                    <p class="text-xs text-gray-500">團購、廉價商品、社交電商</p>
+                                </div>
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#00D1C1"/>
+                                        <text x="50" y="62" font-size="32" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">盒</text>
+                                    </svg>
+                                    <h4 class="font-medium">盒馬鮮生</h4>
+                                    <p class="text-xs text-gray-500">生鮮配送、半小時送達</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 旅遊與訂票 -->
+                        <div class="mb-6">
+                            <h4 class="text-lg font-medium text-gray-700 mb-3 flex items-center">
+                                <span class="w-8 h-8 bg-cyan-100 rounded-full flex items-center justify-center mr-2">
+                                    <i class="fas fa-plane text-cyan-500"></i>
+                                </span>
+                                旅遊與訂票
+                            </h4>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#00AF87"/>
+                                        <text x="50" y="62" font-size="24" font-weight="bold" fill="white" text-anchor="middle" font-family="Microsoft YaHei">攜程</text>
+                                    </svg>
+                                    <h4 class="font-medium">攜程</h4>
+                                    <p class="text-xs text-gray-500">機票、酒店、旅遊套票</p>
+                                </div>
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#FFC107"/>
+                                        <text x="50" y="62" font-size="24" font-weight="bold" fill="white" text-anchor="middle" font-family="Microsoft YaHei">去哪兒</text>
+                                    </svg>
+                                    <h4 class="font-medium">去哪兒</h4>
+                                    <p class="text-xs text-gray-500">機票比價、酒店特價</p>
+                                </div>
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#D53F32"/>
+                                        <text x="50" y="62" font-size="36" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">T</text>
+                                    </svg>
+                                    <h4 class="font-medium">Trip.com</h4>
+                                    <p class="text-xs text-gray-500">國際機票、酒店預訂</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 影音娛樂 -->
+                        <div class="mb-6">
+                            <h4 class="text-lg font-medium text-gray-700 mb-3 flex items-center">
+                                <span class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center mr-2">
+                                    <i class="fas fa-film text-red-500"></i>
+                                </span>
+                                影音娛樂
+                            </h4>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#FF4C4C"/>
+                                        <text x="50" y="62" font-size="32" font-weight="bold" fill="white" text-anchor="middle" font-family="Microsoft YaHei">騰訊視頻</text>
+                                    </svg>
+                                    <h4 class="font-medium">騰訊視頻</h4>
+                                    <p class="text-xs text-gray-500">影視劇集、綜藝節目</p>
+                                </div>
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#00D1C1"/>
+                                        <text x="50" y="62" font-size="32" font-weight="bold" fill="white" text-anchor="middle" font-family="Microsoft YaHei">嗶哩嗶哩</text>
+                                    </svg>
+                                    <h4 class="font-medium">嗶哩嗶哩</h4>
+                                    <p class="text-xs text-gray-500">動漫、遊戲、UP主創作</p>
+                                </div>
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#00BE06"/>
+                                        <text x="50" y="62" font-size="36" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">網抑</text>
+                                    </svg>
+                                    <h4 class="font-medium">網易雲音樂</h4>
+                                    <p class="text-xs text-gray-500">音樂、播客、動態</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 生活實用 -->
+                        <div class="mb-6">
+                            <h4 class="text-lg font-medium text-gray-700 mb-3 flex items-center">
+                                <span class="w-8 h-8 bg-teal-100 rounded-full flex items-center justify-center mr-2">
+                                    <i class="fas fa-tools text-teal-500"></i>
+                                </span>
+                                生活實用
+                            </h4>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#4A90D9"/>
+                                        <text x="50" y="62" font-size="32" font-weight="bold" fill="white" text-anchor="middle" font-family="Microsoft YaHei">58同城</text>
+                                    </svg>
+                                    <h4 class="font-medium">58同城</h4>
+                                    <p class="text-xs text-gray-500">房屋租售、招聘、搬家</p>
+                                </div>
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#5FCC65"/>
+                                        <text x="50" y="62" font-size="32" font-weight="bold" fill="white" text-anchor="middle" font-family="Microsoft YaHei">貝殼</text>
+                                    </svg>
+                                    <h4 class="font-medium">貝殼找房</h4>
+                                    <p class="text-xs text-gray-500">二手房、租房、新樓</p>
+                                </div>
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#FF6B6B"/>
+                                        <text x="50" y="62" font-size="28" font-weight="bold" fill="white" text-anchor="middle" font-family="Microsoft YaHei">美團民宿</text>
+                                    </svg>
+                                    <h4 class="font-medium">美團民宿</h4>
+                                    <p class="text-xs text-gray-500">短租、民宿預訂</p>
+                                </div>
+                                <div class="bg-white border rounded-lg p-3 text-center hover:shadow-md transition">
+                                    <svg class="w-12 h-12 mx-auto mb-2" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="50" cy="50" r="50" fill="#007AFF"/>
+                                        <text x="50" y="62" font-size="32" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">医</text>
+                                    </svg>
+                                    <h4 class="font-medium">醫典</h4>
+                                    <p class="text-xs text-gray-500">健康資訊、在線問診</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -873,6 +1749,34 @@
                             <a href="#" class="bg-white p-2 rounded text-center text-sm hover:shadow">香港醫生諮詢</a>
                         </div>
                     </div>
+
+                    <!-- 家居維修 -->
+                    <div class="bg-gray-50 p-4 rounded-lg mt-4">
+                        <h3 class="font-medium text-gray-800 mb-3"><i class="fas fa-tools mr-2 text-gray-600"></i>家居維修服務</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-5 gap-3 text-center text-sm">
+                            <div class="bg-white p-2 rounded">
+                                <i class="fas fa-wrench text-blue-500"></i>
+                                <p class="mt-1">水電維修</p>
+                            </div>
+                            <div class="bg-white p-2 rounded">
+                                <i class="fas fa-couch text-orange-500"></i>
+                                <p class="mt-1">家具組裝</p>
+                            </div>
+                            <div class="bg-white p-2 rounded">
+                                <i class="fas fa-snowflake text-cyan-500"></i>
+                                <p class="mt-1">冷氣清洗</p>
+                            </div>
+                            <div class="bg-white p-2 rounded">
+                                <i class="fas fa-key text-yellow-500"></i>
+                                <p class="mt-1">開鎖服務</p>
+                            </div>
+                            <div class="bg-white p-2 rounded">
+                                <i class="fas fa-paint-roller text-purple-500"></i>
+                                <p class="mt-1">牆面修補</p>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-2"><i class="fas fa-info-circle mr-1"></i>平台推薦：58同城、美團生活服務、京東家政</p>
+                    </div>
                 </section>
 
                 <!-- Transportation -->
@@ -1084,41 +1988,203 @@
                         <i class="fas fa-briefcase-medical section-icon"></i>
                         <h2 class="text-2xl font-bold text-gray-800 ml-2">法律與醫療</h2>
                     </div>
-                    
+
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- 法律須知 -->
                         <div>
                             <h3 class="text-xl font-semibold mb-3 text-gray-800"><i class="fas fa-balance-scale mr-2 text-blue-500"></i>法律須知</h3>
-                            <div class="bg-blue-50 p-4 rounded-lg mb-4">
-                                <h4 class="font-medium text-blue-800 mb-2"><i class="fas fa-exclamation-triangle mr-2"></i>注意事項</h4>
-                                <ul class="list-disc pl-5 text-gray-700">
-                                    <li>內地法律體系與香港不同，需特別注意</li>
-                                    <li>簽訂合同前建議諮詢專業律師</li>
-                                    <li>保留所有交易憑證和通訊記錄</li>
-                                    <li>遇糾紛可尋求當地港澳辦協助</li>
+
+                            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-lg mb-4">
+                                <h4 class="font-medium text-blue-800 mb-2"><i class="fas fa-gavel mr-2"></i>內地與香港法律差異</h4>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex items-start"><i class="fas fa-arrow-right text-blue-500 mt-1 mr-2"></i><span><strong>法律體系：</strong>內地採用大陸法系，香港採用普通法系</span></li>
+                                    <li class="flex items-start"><i class="fas fa-arrow-right text-blue-500 mt-1 mr-2"></i><span><strong>土地制度：</strong>內地土地屬國家所有，樓房為使用權</span></li>
+                                    <li class="flex items-start"><i class="fas fa-arrow-right text-blue-500 mt-1 mr-2"></i><span><strong>合同精神：</strong>內地較強調書面合同</span></li>
+                                    <li class="flex items-start"><i class="fas fa-arrow-right text-blue-500 mt-1 mr-2"></i><span><strong>司法獨立：</strong>各城市有自己的法院系統</span></li>
                                 </ul>
                             </div>
-                            
+
+                            <div class="bg-yellow-50 p-4 rounded-lg mb-4">
+                                <h4 class="font-medium text-yellow-800 mb-2"><i class="fas fa-exclamation-triangle mr-2"></i>港人注意事項</h4>
+                                <ul class="list-disc pl-5 text-gray-700 text-sm space-y-1">
+                                    <li>簽訂合同前建議諮詢專業律師（內地執業律師）</li>
+                                    <li>保留所有交易憑證、通訊記錄和付款證明</li>
+                                    <li>遇糾紛可尋求當地港澳辦或香港駐粵辦協助</li>
+                                    <li>重要合同建議公證辦理</li>
+                                    <li>注意合同中的違約條款和爭議解決方式</li>
+                                </ul>
+                            </div>
+
+                            <div class="bg-white border rounded-lg p-4 mb-4">
+                                <h4 class="font-medium text-gray-800 mb-3"><i class="fas fa-phone-alt mr-2 text-green-500"></i>求助熱線</h4>
+                                <div class="space-y-2 text-sm">
+                                    <div class="flex items-center">
+                                        <span class="w-20 font-medium">香港駐粵辦</span>
+                                        <span class="text-gray-600">+86 20-3889-1622</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="w-20 font-medium">港澳維權中心</span>
+                                        <span class="text-gray-600">+86 400-8222-800</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="w-20 font-medium">法律援助</span>
+                                        <span class="text-gray-600">12348（內地）</span>
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="bg-white border rounded-lg p-4">
-                                <h4 class="font-medium text-gray-800 mb-2"><i class="fas fa-gavel mr-2"></i>常用法律服務</h4>
+                                <h4 class="font-medium text-gray-800 mb-3"><i class="fas fa-globe mr-2"></i>常用法律服務</h4>
                                 <div class="grid grid-cols-2 gap-3">
-                                    <a href="#" class="bg-gray-100 hover:bg-gray-200 p-2 rounded text-center text-sm transition">房產法律</a>
-                                    <a href="#" class="bg-gray-100 hover:bg-gray-200 p-2 rounded text-center text-sm transition">勞動糾紛</a>
-                                    <a href="#" class="bg-gray-100 hover:bg-gray-200 p-2 rounded text-center text-sm transition">商業合同</a>
-                                    <a href="#" class="bg-gray-100 hover:bg-gray-200 p-2 rounded text-center text-sm transition">婚姻家事</a>
+                                    <a href="#" class="bg-blue-50 hover:bg-blue-100 p-3 rounded-lg text-center text-sm transition">
+                                        <i class="fas fa-home text-blue-500 mb-1"></i>
+                                        <p class="font-medium">房產法律</p>
+                                    </a>
+                                    <a href="#" class="bg-green-50 hover:bg-green-100 p-3 rounded-lg text-center text-sm transition">
+                                        <i class="fas fa-briefcase text-green-500 mb-1"></i>
+                                        <p class="font-medium">勞動糾紛</p>
+                                    </a>
+                                    <a href="#" class="bg-purple-50 hover:bg-purple-100 p-3 rounded-lg text-center text-sm transition">
+                                        <i class="fas fa-file-signature text-purple-500 mb-1"></i>
+                                        <p class="font-medium">商業合同</p>
+                                    </a>
+                                    <a href="#" class="bg-red-50 hover:bg-red-100 p-3 rounded-lg text-center text-sm transition">
+                                        <i class="fas fa-heart text-red-500 mb-1"></i>
+                                        <p class="font-medium">婚姻家事</p>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        
+
+                        <!-- 醫療服務 -->
                         <div>
                             <h3 class="text-xl font-semibold mb-3 text-gray-800"><i class="fas fa-hospital mr-2 text-green-500"></i>醫療服務</h3>
-                            <div class="bg-green-50 p-4 rounded-lg mb-4">
-                                <h4 class="font-medium text-green-800 mb-2"><i class="fas fa-user-md mr-2"></i>港式醫療</h4>
-                                <ul class="list-disc pl-5 text-gray-700">
-                                    <li>深圳港大醫院 - 港式管理，部分醫生來自香港</li>
-                                    <li>廣州和睦家醫院 - 國際標準，英語服務</li>
-                                    <li>珠海市人民醫院 - 與香港大學合作</li>
-                                    <li>(待完成...)</li>
-                                </ul>
+
+                            <div class="bg-gradient-to-r from-green-50 to-teal-50 p-4 rounded-lg mb-4">
+                                <h4 class="font-medium text-green-800 mb-2"><i class="fas fa-user-md mr-2"></i>港式/港人友好醫院</h4>
+                                <div class="space-y-3">
+                                    <div class="bg-white p-3 rounded-lg">
+                                        <p class="font-medium text-blue-600">香港大學深圳醫院</p>
+                                        <p class="text-sm text-gray-600">深圳市福田區海園一路1號 | 三甲綜合</p>
+                                        <p class="text-xs text-gray-500">港式管理模式，可使用香港醫療券</p>
+                                    </div>
+                                    <div class="bg-white p-3 rounded-lg">
+                                        <p class="font-medium text-blue-600">深圳華為大學深圳醫院</p>
+                                        <p class="text-sm text-gray-600">深圳市南山區桃源路89號 | 三甲綜合</p>
+                                        <p class="text-xs text-gray-500">港式服務，部分醫生可用英語溝通</p>
+                                    </div>
+                                    <div class="bg-white p-3 rounded-lg">
+                                        <p class="font-medium text-blue-600">廣州和睦家醫院</p>
+                                        <p class="text-sm text-gray-600">廣州市天河區中山大道西 | 國際標準</p>
+                                        <p class="text-xs text-gray-500">全英語服務，國際保險直付</p>
+                                    </div>
+                                    <div class="bg-white p-3 rounded-lg">
+                                        <p class="font-medium text-blue-600">珠海市人民醫院</p>
+                                        <p class="text-sm text-gray-600">珠海市香洲區人民東路 | 三甲綜合</p>
+                                        <p class="text-xs text-gray-500">與香港大學有合作關係</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-blue-50 p-4 rounded-lg mb-4">
+                                <h4 class="font-medium text-blue-800 mb-2"><i class="fas fa-stethoscope mr-2"></i>各城市三甲醫院推薦</h4>
+                                <div class="overflow-x-auto">
+                                    <table class="min-w-full text-sm">
+                                        <thead>
+                                            <tr class="text-left">
+                                                <th class="pb-2">城市</th>
+                                                <th class="pb-2">醫院</th>
+                                                <th class="pb-2">特色</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="text-gray-700">
+                                            <tr class="border-t">
+                                                <td class="py-2" rowspan="2">深圳</td>
+                                                <td>香港大學深圳醫院</td>
+                                                <td>港式管理</td>
+                                            </tr>
+                                            <tr class="border-t">
+                                                <td>北京大學深圳醫院</td>
+                                                <td>綜合實力強</td>
+                                            </tr>
+                                            <tr class="border-t">
+                                                <td rowspan="2">廣州</td>
+                                                <td>中山大學附屬第一醫院</td>
+                                                <td>全國百強</td>
+                                            </tr>
+                                            <tr class="border-t">
+                                                <td>中山大學附屬第八醫院</td>
+                                                <td>設備先進</td>
+                                            </tr>
+                                            <tr class="border-t">
+                                                <td>東莞</td>
+                                                <td>東華醫院</td>
+                                                <td>三甲綜合</td>
+                                            </tr>
+                                            <tr class="border-t">
+                                                <td>珠海</td>
+                                                <td>中山大學附屬第五醫院</td>
+                                                <td>傳染病防治</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="bg-purple-50 p-4 rounded-lg mb-4">
+                                <h4 class="font-medium text-purple-800 mb-2"><i class="fas fa-shield-alt mr-2"></i>醫療保障選項</h4>
+                                <div class="grid grid-cols-1 gap-2 text-sm">
+                                    <div class="bg-white p-2 rounded flex items-center">
+                                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                        <div>
+                                            <p class="font-medium">城鄉居民基本醫療保險</p>
+                                            <p class="text-xs text-gray-500">需有居住證，年費約¥300-500</p>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white p-2 rounded flex items-center">
+                                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                        <div>
+                                            <p class="font-medium">商業醫療保險</p>
+                                            <p class="text-xs text-gray-500">平安、國壽、友邦等，保額高</p>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white p-2 rounded flex items-center">
+                                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                        <div>
+                                            <p class="font-medium">香港醫療保險（內地就診）</p>
+                                            <p class="text-xs text-gray-500">部分保險可在內地指定醫院報銷</p>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white p-2 rounded flex items-center">
+                                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                                        <div>
+                                            <p class="font-medium">長者醫療券（港大深圳醫院）</p>
+                                            <p class="text-xs text-gray-500">65歲以上港人可用，每年¥2000</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-medium text-green-800 mb-2"><i class="fas fa-ambulance mr-2"></i>緊急求助</h4>
+                                <div class="grid grid-cols-2 gap-2 text-sm">
+                                    <div class="bg-white p-2 rounded text-center">
+                                        <p class="font-bold text-red-500">120</p>
+                                        <p class="text-xs text-gray-500">救護車</p>
+                                    </div>
+                                    <div class="bg-white p-2 rounded text-center">
+                                        <p class="font-bold text-blue-500">110</p>
+                                        <p class="text-xs text-gray-500">報警</p>
+                                    </div>
+                                    <div class="bg-white p-2 rounded text-center">
+                                        <p class="font-bold text-green-500">999</p>
+                                        <p class="text-xs text-gray-500">火警/急救</p>
+                                    </div>
+                                    <div class="bg-white p-2 rounded text-center">
+                                        <p class="font-bold text-purple-500">12320</p>
+                                        <p class="text-xs text-gray-500">衛生熱線</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
